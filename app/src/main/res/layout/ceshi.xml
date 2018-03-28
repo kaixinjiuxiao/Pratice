@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    >
+
+    <freedom.wealth.practice.view.CircleImageView
+        android:id="@+id/imgAuthor"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@mipmap/icon_author"
+
+        />
+
+    <TextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/imgAuthor"
+        android:gravity="center"
+        android:text="作者"
+        android:textColor="@color/main"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="一小时前"
+        android:textColor="@color/main"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author"
+        android:layout_marginTop="7dp"
+        android:maxLines="1"
+        android:text="文章标题"
+        android:textColor="@color/black_gray"
+        android:textSize="16sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/classify"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:text="文章分类"
+            android:textColor="@color/main"
+            />
+
+        <ImageView
+            android:id="@+id/imgZan"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zan_selected"
+            />
+    </RelativeLayout>
+</RelativeLayout>
